@@ -1,0 +1,10 @@
+## 数据模板配置
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+
+comment.avatar: /images/avatar.jpg

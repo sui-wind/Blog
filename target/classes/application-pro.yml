@@ -1,0 +1,27 @@
+## 数据模板配置
+spring:
+  ## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: root
+    password: 123456
+  ## jpa 配置
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+## 日志配置
+logging:
+  level:
+    root: warn
+    com.tlc: info
+  ## 日志文件存放位置
+  file:
+    path: log/blog-pro.log
+
+## 占用端口号
+server:
+  port: 8081
+
